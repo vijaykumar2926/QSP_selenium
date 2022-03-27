@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testNG.Order_of_execution">
+        <methods>
+          <include name="open"/>
+          <include name="close"/>
+          <include name="sample"/>
+        </methods>
+      </class> <!-- testNG.Order_of_execution -->
+      <class name="testNG.Hard_assert_case2">
+        <methods>
+          <include name="open"/>
+          <include name="close"/>
+          <include name="test"/>
+        </methods>
+      </class> <!-- testNG.Hard_assert_case2 -->
+      <class name="testNG.Soft_assert_case1">
+        <methods>
+          <include name="test"/>
+          <include name="open"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- testNG.Soft_assert_case1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
